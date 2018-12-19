@@ -1,0 +1,515 @@
+/* définition des polices */
+@font-face{
+    font-family: "OpenSans";
+    src:url("../Open_sans_font/OpenSans-Regular.ttf");
+}
+@font-face{
+    font-family: "OpenSansLight";
+    src:url("../Open_sans_font/OpenSans-Light.ttf");
+}
+@font-face{
+    font-family: "OpenSansBold";
+    src: url("../Open_sans_font/OpenSans-Bold.ttf");
+}
+/* retrait des valeurs d'espacement par défaut */
+.{
+    margin: 0;
+    padding: 0;
+}
+/* police général */
+body{
+     font-family: "OpenSans";
+     width: 1920px;
+     margin: auto;
+}
+/* -----------------------entête--------------------------- */
+header{
+    background-image: url("../images/header.png");
+    position: absolute;
+    top: 0;
+    width: 1920px;
+    height: 896px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------barre de navigation en haut- */
+#logoACS{
+    margin-left: 360px;
+    margin-top: 20px;
+}
+nav{
+    display:flex;
+    justify-content:space-between ;
+    /* fond noir en transparence */
+    background-color: rgb(0,0,0,0.3);
+    width: 1920px;
+    height: 90px;
+    /* position en haut */
+    position: absolute;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 360px;
+    margin-top: 0;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+nav li, header a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 32px 10px;
+}
+nav ul :hover{
+    color: #d31f44;
+}
+.active{
+    background-color: #d31e44;
+    padding: 36px;
+}
+/* texte en noir si page active */
+.active:hover{
+    color:black;
+}
+
+/* --------------------titres du header */
+#titres{
+    margin: 0 360px;
+}
+h1{
+    margin-top: 380px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 3.1em;
+}
+/* fond en transparence et police légère */
+.sousTitre{
+    background-color: rgb(150,150,150,0.3);
+    padding: 10px 0;
+    margin: 10px 50px;
+    font-size: 2.2em;
+    font-family: "OpenSansLight";
+}
+/* ------------------bouton rouge du header */
+.bouton_rouge1{
+    background-image: linear-gradient(to left, #9d0021, #d31e44);
+    padding: 15px 50px;
+    position: relative;
+    top: 50px;
+}
+
+/* ------------bandeau GEN--------------------------- */
+#GEN{
+    height: 460px;
+    width: 1920px;
+    margin-top: 896px;
+    padding: 30px 0;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* ligne hr rouge stylisée */
+.rouge{
+    display: block;
+    width: 150px;
+    background-image: linear-gradient(to right, #d31e44,white);
+    height: 3px;
+    border: none;
+}
+#GEN{
+    text-align: center;
+    margin-bottom: 0;
+}
+#gen2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+#texteGauche{
+    text-align: right;
+    padding-right: 20px;
+    margin-left: 360px;
+    width: 500px;
+}
+#texteDroite{
+    text-align: left;
+    padding-left: 20px;
+    margin-right: 360px;
+    width: 500px;
+}
+/* puces des listes en elipses rouges */
+#texteDroite li, #texteProjet li{
+    list-style-type: circle;  /* au cas où pb avec image */
+    list-style-image: url("../images/elipse.png");
+}
+
+/* --------------------bandeau enseignement-------------------- */
+#enseignement{
+    background-image: url("../images/projet_collaboratif_bg.png");
+    background-repeat: no-repeat;
+    height: 405px;
+    width: 1920px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+/* ligne hr blanche stylisée */
+.blanche{
+    display: block;
+    width: 150px;
+    background-image: linear-gradient(to right,white,rgba(255, 255, 255, 0));
+    height: 3px;
+    border: none;
+
+}
+#enseign{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 360px;
+}
+#enseign p{
+    text-align: center;
+}
+
+/* ----------------------bandeau métier------------------- */
+#metier{
+    background-color: #3e3e3e;
+    color:white;
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    height: 560px;
+    padding-top: 50px;
+}
+#texteMetier hr{
+    margin-left: 0;
+}
+/* mise en forme pour tous les titres souligné */
+.titre, .titre h3{
+    text-align: left;
+    padding-bottom: 10px;
+}
+#texteMetier{
+    text-align: left;
+    padding-right: 40px;
+    padding-left: 360px;
+}
+#texteMetier h4{
+    margin-bottom: 0;
+}
+#texteMetier h4 + p{
+    margin-top: 0;
+}
+/* bouton */
+#texteMetier a{
+    padding: 10px 50px;
+    position: relative;
+    top: 50px;
+    text-decoration: none;
+    color:white;
+    border: 3px white solid;
+    text-transform: uppercase;
+}
+#texteMetier a:hover{
+    background-image: linear-gradient(to left, #9d0021, #d31e44);
+    border: none ;
+}
+#video{
+    padding-top: 100px;
+    padding-right: 360px;
+}
+
+/* -------------------------bandeau projet------------------------ */
+#projet{
+    display: flex;
+    justify-content: center;
+    padding: 0 360px;
+    padding-bottom: 50px;
+    width: 1200px;
+    height: 360px;
+}
+#etudiant{
+    margin-top: 70px;
+}
+#texteProjet{
+    position: relative;
+    padding-left: 40px;
+    margin-top: 35px;
+    font-size: 0.85em;
+    line-height: 1.8em;
+}
+#texteProjet hr{
+    margin-left: 0;
+}
+#texteProjet p{
+    padding: 10px 0;
+}
+#texteProjet ul{
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+/* --------------------------bandeau titre pro---------------------- */
+#titrePro{
+    background-image: url(../images/projet_bg.png);
+    width: 1920px;
+    height: 296px;
+    color: white;
+    text-align: center;
+    font-size: 2.2em;
+}
+#titrePro p{
+    padding: 70px 460px;
+}
+#titrePro span{
+    font-family: "OpenSansBold";
+}
+
+/* ----------------------------bandeau centres------------------ */
+#centres{
+    width: 1200px; 
+    margin: 50px 360px;
+}
+#centres h3, #centres .rouge{
+    margin-bottom: 0;
+}
+#centres hr{
+    margin-left: 0;
+}
+#photosCentres{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.photo{
+    position: relative;
+    background-color: #d31e44;
+    margin-bottom: 25px;
+}
+#photosCentres img{ 
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block;
+    height: auto;
+    width: 100%; 
+}
+.effet{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);  
+}
+.nomVilleCentre{   
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+.photo:hover .effet{
+    opacity: 1;
+}
+#photosCentres img:hover{
+    opacity:0.3; 
+}
+
+/* -----------------------------bandeau témoignages------------- */
+#temoignages{
+    background-image: url(../images/temoignages.png);
+    width: 1200px;
+    height: 540px;
+    color:white;
+    padding: 30px 360px;
+}
+#entete{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+#entete hr{
+    margin-left: 0;
+}
+#quote{
+    margin-top: 30px;
+}
+#temoignTexte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 400px;
+}
+#temoignTexte p{
+    font-family: "OpenSansLight";
+    line-height: 40px;
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    text-align: justify;
+}
+#identite{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+#identite strong{
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+    padding: 0 15px;
+    color: white;
+}
+/* bouton */
+#temoignages a{
+    text-decoration: none;
+    color: white;
+    border: 3px white solid;
+    padding: 10px 10px;  
+    margin-top: 50px; 
+    width: 225px;
+    text-align: center;
+    font-size: 1em;
+    font-family: "OpenSans";
+}
+#temoignages a:hover{
+    background-image: linear-gradient(to left, #9d0021, #d31e44);
+    border: none ;
+}
+
+/* -----------------------bandeau contact--------------------------- */
+#contact{
+    background-image: linear-gradient(#9d0021, #d31e44);
+    color: white;
+    height: 700px;
+    padding: 40px 360px;
+    width: 1200px;
+}
+#contact hr{
+    margin-left: 0;
+}
+  /* texte en majuscule */
+#contact h3{
+    text-align: left;
+    text-transform: uppercase;
+}
+::placeholder{
+    text-transform: uppercase;
+    color:white;
+    font-size: 1.2em;
+}
+/* mise en page des flex-box */
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+#debut{
+    display: flex;
+    justify-content: center;
+}
+#nomcomplet, #codeville{
+    display: flex;
+    justify-content: space-between;
+}
+
+#formGauche{
+    width: 50%;
+}
+/* mise en place du paragraphe de texte */
+#texteformulaire{
+    padding-left: 50px;
+    padding-top: 30px;
+    width: 50%;
+}
+#texteformulaire span{
+    font-family: "OpenSansBold";
+}
+/* retrait des cases de saisies par défaut  */
+input, textarea{
+    background-color: transparent;
+    border: none;
+}
+/* lignes sous zones de saisie du formulaire */
+#nom1, #nom2, #mail, #code, #nomville {
+    border-bottom: 2px white solid;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+}
+#nom1, #nom2, #code, #nomville {
+    width: 250px;
+}
+/* definition de la zone de message */
+textarea{
+    border: 2px white solid;
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    resize: none;
+}
+label{
+    font-size: 1.1em;
+    padding-top: 30px;
+}
+/* bouton d'envoi */
+input[type=submit]{
+    background-color: white;
+    color: #d31f44;
+    margin-left: 500px;
+    margin-top: 50px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+/* ------------------------bandeau logo----------------------- */
+#logos{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    padding: 50px 50px;
+    width: 1820px;
+}
+#logos img:nth-child(1){
+    padding: 40px 0px;
+}
+#logos img:nth-child(3), #logos img:nth-child(4){
+    padding: 20px 0px;
+}
+/* ----------------bandeau footer--------------- */
+footer{
+    background-color: #3e3e3e;
+    padding: 60px 360px;
+    width: 1200px;
+}
+#miseEnForme{
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
+/* séparation entre les 2 premiers liens */
+#liens a:first-child{
+    border-right: 1px white solid;
+    padding-right: 5px;
+}
+#icones img{
+    padding-left: 50px;
+}
+#icones img:hover{
+    opacity: 0.6;
+}
